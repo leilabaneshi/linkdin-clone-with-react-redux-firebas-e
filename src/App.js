@@ -1,5 +1,6 @@
-import React from 'react'
-import Header from './Header'
+import React from 'react';
+import Header from './Header';
+import Sidebar from './Sidebar';
 import './App.css';
 
 function App() {
@@ -10,9 +11,15 @@ function App() {
       <Header />
 
       {/*app body */}
-      {/*sidebar */}
-      {/*feed */}
-      {/*widgets */}
+      <div className="app__body">
+
+
+        {/*sidebar */}
+        <Sidebar />
+
+        {/*feed */}
+        {/*widgets */}
+      </div>
     </div>
   );
 }
